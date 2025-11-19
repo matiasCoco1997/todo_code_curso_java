@@ -1,5 +1,7 @@
 package com.mycompany._ejerciciointegrador;
 
+import java.util.Scanner;
+
 public class EjercicioIntegrador {
 
     public static void main(String[] args) {
@@ -22,17 +24,49 @@ public class EjercicioIntegrador {
         Supervisor supervisor = new Supervisor ("Mariano Gutierrez", "Supervisor");
         Cajero cajero = new Cajero ("Mariana Costa", "Cajero");
         
-        System.out.println( "El empleado " + repositor.getNombreEmpleado() + 
-                            " posee la categoria " + repositor.getCategoria() +
-                            " y tiene un salario de " + repositor.getSalarioTotal());
+        Scanner teclado = new Scanner(System.in);
+        int categoria = 20;
         
-        System.out.println( "El empleado " + supervisor.getNombreEmpleado() + 
-                            " posee la categoria " + supervisor.getCategoria() +
-                            " y tiene un salario de " + supervisor.getSalarioTotal());
         
-        System.out.println( "El empleado " + cajero.getNombreEmpleado() + 
-                            " posee la categoria " + cajero.getCategoria() +
-                            " y tiene un salario de " + cajero.getSalario());
-        
+        while(categoria != 0){
+            System.out.println("************    Ingrese el tipo de categoria que desea ver  ************");
+            System.out.println("1) Repositor");
+            System.out.println("2) Supervisor");
+            System.out.println("3) Cajero");
+            System.out.println("0) Salir");
+
+            categoria = teclado.nextInt();
+
+            switch(categoria){
+
+                case 1:
+                    System.out.println( "El empleado " + repositor.getNombreEmpleado() + 
+                                " posee la categoria " + repositor.getCategoria() +
+                                " y tiene un salario de " + repositor.getSalarioTotal());
+                    break;
+
+                case 2:
+                    System.out.println( "El empleado " + supervisor.getNombreEmpleado() + 
+                                " posee la categoria " + supervisor.getCategoria() +
+                                " y tiene un salario de " + supervisor.getSalarioTotal());
+                    break;
+
+                case 3:
+                    System.out.println( "El empleado " + cajero.getNombreEmpleado() + 
+                                " posee la categoria " + cajero.getCategoria() +
+                                " y tiene un salario de " + cajero.getSalario());
+                    break;
+                    
+                case 3:
+                    System.out.println("Fin de programa");
+                    break;
+
+                default:
+                    System.out.println("Debe ingresar un numero de categoria valido");
+                    break;
+            }
+
+        }
+  
     }
 }
