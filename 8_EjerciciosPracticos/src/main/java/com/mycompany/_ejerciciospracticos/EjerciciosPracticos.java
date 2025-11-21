@@ -33,11 +33,13 @@ public class EjerciciosPracticos {
                     break;
                     
                 case 2:
-                    System.out.println("1) Ejecutar ejercicio 1.");
+                    EjercicioDos ejercicioDos = new EjercicioDos(teclado);
+                    ejercicioDos.ejecutarEjercicio();
                     break;
                     
                 case 3:
-                    System.out.println("1) Ejecutar ejercicio 1.");
+                    EjercicioTres ejercicioTres = new EjercicioTres(teclado);
+                    ejercicioTres.ejecutarEjercicio();
                     break;
                     
                 case 4:
