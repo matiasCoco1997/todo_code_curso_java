@@ -57,7 +57,7 @@ public class EjercicioIntegrador {
                                 " y tiene un salario de " + cajero.getSalario());
                     break;
                     
-                case 3:
+                case 0:
                     System.out.println("Fin de programa");
                     break;
 
@@ -65,6 +65,7 @@ public class EjercicioIntegrador {
                     System.out.println("Debe ingresar un numero de categoria valido");
                     break;
             }
+            
 
         }
   
