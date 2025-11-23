@@ -48,6 +48,8 @@ public class EjerciciosPracticos {
                     break;
                     
                 case 5:
+                    EjercicioCinco ejercicioCinco = new EjercicioCinco(teclado);
+                    ejercicioCinco.ejercutarEjercicio();
                     break;
                     
                 default:
