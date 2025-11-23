@@ -19,7 +19,7 @@ public class EjerciciosPracticos {
             System.out.println("5) Ejecutar ejercicio 5.");
             System.out.println("0) Salir.");
             
-            seleccion = teclado.nextInt();
+            seleccion = Integer.parseInt(teclado.nextLine());
             
             switch(seleccion){
                 
@@ -43,6 +43,8 @@ public class EjerciciosPracticos {
                     break;
                     
                 case 4:
+                    EjercicioCuatro ejercicioCuatro = new EjercicioCuatro(teclado);
+                    ejercicioCuatro.ejecutarEjercicio();
                     break;
                     
                 case 5:

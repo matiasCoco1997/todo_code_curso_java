@@ -27,6 +27,7 @@ public class EjercicioCuatro {
     private int edad;
     private int dni;
     private Scanner teclado;
+   
 
     public EjercicioCuatro(Scanner teclado) {
         this.teclado = teclado;
@@ -35,32 +36,84 @@ public class EjercicioCuatro {
     
     
     public void ejecutarEjercicio(){
-        String nombreIngresado = "nombre";
-        int dniIngresado, edadIngresada;
+        String nombreAux;
+        int dniAux, edadAux;
+
+        //input nombre
+        System.out.println("Ingrese un nombre");
+        nombreAux = teclado.nextLine();
+        setNombre(nombreAux);
+
+        //input dni
+        System.out.println("Ingrese un número de dni");
+        dniAux = Integer.parseInt(teclado.nextLine());
+        setDni(dniAux);
+
+        //input edad
+        System.out.println("Ingrese una edad");
+        edadAux = Integer.parseInt(teclado.nextLine());
+        setEdad(edadAux);
         
-        
-        while( this.getDni() != 0 && !this.getNombre().equals("fin")){
-            
-            while( nombreIngresado.isBlank() ){
-                System.out.println("Ingrese un nombre");
-                nombreIngresado = teclado.nextLine();
+        while( this.getDni() != 0 || !this.getNombre().equalsIgnoreCase("fin")){
 
-                if( !nombreIngresado.isBlank() ){
-                    setNombre(nombreIngresado);
-                } else{
-                    System.out.println("Ingrese un nombre valido");
-                }
+            /*
+                Menores A (de 6 a 10 años)
+                Menores B (de 11 a 17 años)
+                Juveniles (de 18 a 30 años)
+                Adultos   (de 31 a 50 años)
+                Adultos mayores (mayores de 50 años)
+            */
+
+            if( this.getEdad() >= 6 && this.getEdad() <= 10 ){
+                System.out.println("El participante " + this.nombre +
+                        "\nDNI: " + this.dni +
+                        "\nPertenece a la categoría: Menores A, ya que su edad es: " + this.edad);
             }
-            
-            System.out.println("Ingrese un numero de dni");
-            dniIngresado = teclado.nextInt();
-            setNombre(nombreIngresado);
-
-
-            if( this.getDni() == 0 && this.getNombre().equals("fin") ){
-
+            else if( this.edad >= 11 && this.edad <= 17 ){
+                System.out.println("El participante " + this.nombre +
+                        "\nDNI: " + this.dni +
+                        "\nPertenece a la categoría: Menores B, ya que su edad es: " + this.edad);
             }
+            else if( this.edad >= 18 && this.edad <= 30 ){
+                System.out.println("El participante " + this.nombre +
+                        "\nDNI: " + this.dni +
+                        "\nPertenece a la categoría: Juveniles, ya que su edad es: " + this.edad);
+            }
+            else if( this.edad >= 31 && this.edad <= 50 ){
+                System.out.println("El participante " + this.nombre +
+                        "\nDNI: " + this.dni +
+                        "\nPertenece a la categoría: Adultos, ya que su edad es: " + this.edad);
+            }
+            else if( this.edad > 50 ){
+                System.out.println("El participante " + this.nombre +
+                        "\nDNI: " + this.dni +
+                        "\nPertenece a la categoría: Adultos mayores, ya que su edad es: " + this.edad);
+            } else{
+                System.out.println("Edad invalida, complete nuevamente los datos");
+            }
+
+            //reset auxiliares
+            nombreAux = null;
+            dniAux = -1;
+            edadAux = -1;
+
+            //input nombre
+            System.out.println("Ingrese un nombre");
+            nombreAux = teclado.nextLine();
+            setNombre(nombreAux);
+
+            //input dni
+            System.out.println("Ingrese un número de dni");
+            dniAux = Integer.parseInt(teclado.nextLine());
+            setDni(dniAux);
+
+            //input edad
+            System.out.println("Ingrese una edad");
+            edadAux = Integer.parseInt(teclado.nextLine());
+            setEdad(edadAux);
         }
+
+        System.out.println("-----   Fin de la ejecución del ejercicio 4   -----");
     }
     
     
