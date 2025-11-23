@@ -22,12 +22,15 @@ public class EjercicioCinco {
         setAltura(Integer.parseInt(teclado.nextLine()));
 
          while (this.getAltura() > 0 ){
+
              for(int filas = 0; filas < this.altura; filas++){
 
+                 //For para controlar los espacios
                  for(int espacios = 0; espacios < (altura - filas - 1); espacios++){
                      System.out.print(" ");
                  }
 
+                 //For para agregar *
                  for(int asteriscos = 0; asteriscos < ((filas*2) + 1); asteriscos++){
                      System.out.print("*");
                  }
@@ -35,7 +38,21 @@ public class EjercicioCinco {
                  System.out.println("");
              }
 
-             System.out.println("Ingrese el valor de altura del arbol navideño o 0 para salir:");
+             //For para controlar los espacios
+             int largoTronco = 1;
+
+             for(int base = 0; base < largoTronco; base ++){
+
+                 for(int espacios = 0 ; espacios < (this.altura - 2); espacios++){
+                     System.out.print(" ");
+                 }
+
+                 for(int tronco = 0 ; tronco < 3; tronco++){
+                     System.out.print("|");
+                 }
+             }
+
+             System.out.println("\nIngrese el valor de altura del arbol navideño o 0 para salir:");
              setAltura(Integer.parseInt(teclado.nextLine()));
          }
 
