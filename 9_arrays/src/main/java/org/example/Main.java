@@ -9,6 +9,9 @@ public class Main {
         vector[0] = 10;
         vector[1] = 20;
         vector[2] = 30;
-        System.out.println(vector[1]);
+
+        System.out.println("Posicion [0]: " + vector[0]);
+        System.out.println("Posicion [1]: " + vector[1]);
+        System.out.println("Posicion [2]: " + vector[2]);
     }
 }
