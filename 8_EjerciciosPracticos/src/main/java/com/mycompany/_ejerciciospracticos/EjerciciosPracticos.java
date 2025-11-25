@@ -6,10 +6,10 @@ public class EjerciciosPracticos {
 
     public static void main(String[] args) {
         int seleccion = -1;
-        
+
         Scanner teclado = new Scanner(System.in);
-        
-        
+
+
         while(seleccion != 0){
             System.out.println("\n\n-----   Seleccione una opcion  -----");
             System.out.println("1) Ejecutar ejercicio 1.");
@@ -28,27 +28,27 @@ public class EjerciciosPracticos {
                     break;
                     
                 case 1:
-                    EjercicioUno ejercicioUno = new EjercicioUno(teclado);
+                    EjercicioUno ejercicioUno = new EjercicioUno();
                     ejercicioUno.ejecutarEjercicio();
                     break;
                     
                 case 2:
-                    EjercicioDos ejercicioDos = new EjercicioDos(teclado);
+                    EjercicioDos ejercicioDos = new EjercicioDos();
                     ejercicioDos.ejecutarEjercicio();
                     break;
                     
                 case 3:
-                    EjercicioTres ejercicioTres = new EjercicioTres(teclado);
+                    EjercicioTres ejercicioTres = new EjercicioTres();
                     ejercicioTres.ejecutarEjercicio();
                     break;
                     
                 case 4:
-                    EjercicioCuatro ejercicioCuatro = new EjercicioCuatro(teclado);
+                    EjercicioCuatro ejercicioCuatro = new EjercicioCuatro();
                     ejercicioCuatro.ejecutarEjercicio();
                     break;
                     
                 case 5:
-                    EjercicioCinco ejercicioCinco = new EjercicioCinco(teclado);
+                    EjercicioCinco ejercicioCinco = new EjercicioCinco();
                     ejercicioCinco.ejercutarEjercicio();
                     break;
                     

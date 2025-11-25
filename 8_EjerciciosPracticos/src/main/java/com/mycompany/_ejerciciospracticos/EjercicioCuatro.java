@@ -26,11 +26,10 @@ public class EjercicioCuatro {
     private String nombre;
     private int edad;
     private int dni;
-    private Scanner teclado;
+    private Scanner teclado = new Scanner(System.in);
    
 
-    public EjercicioCuatro(Scanner teclado) {
-        this.teclado = teclado;
+    public EjercicioCuatro() {
     }
     
     

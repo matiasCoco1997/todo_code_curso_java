@@ -8,11 +8,10 @@ public class EjercicioUno {
         (por ejemplo 100) muestre en pantalla todos lso números hasta ese límite (empezando por 1).
     */
     private int ultimoNumero;
-    private Scanner teclado;
+    private Scanner teclado = new Scanner(System.in);
 
-    public EjercicioUno(Scanner teclado) {
-        this.teclado = teclado;
-    }
+    public EjercicioUno() {
+            }
         
     public void ejecutarEjercicio(){
         System.out.println("Ingrese el limite (valor numerico):");

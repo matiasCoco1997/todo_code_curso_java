@@ -9,12 +9,11 @@ import java.util.Scanner;
     La secuencia deberia ser: 200...202...204...etc
 */
 public class EjercicioDos {
-    private Scanner teclado;
+    private Scanner teclado = new Scanner(System.in);
     private int inicio = 200;
     private int limite = 250;
 
-    public EjercicioDos(Scanner teclado) {
-        this.teclado = teclado;
+    public EjercicioDos() {
     }
     
     public void ejecutarEjercicio(){      

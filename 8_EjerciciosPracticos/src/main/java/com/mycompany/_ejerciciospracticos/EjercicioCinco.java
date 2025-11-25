@@ -10,10 +10,10 @@ import java.util.Scanner;
 
 public class EjercicioCinco {
     private int altura;
-    private Scanner teclado;
+    private Scanner teclado = new Scanner(System.in);
 
-    public EjercicioCinco(Scanner teclado) {
-        this.teclado = teclado;
+    public EjercicioCinco() {
+
     }
 
     public void ejercutarEjercicio (){
