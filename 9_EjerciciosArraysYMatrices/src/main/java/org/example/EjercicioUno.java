@@ -1,12 +1,14 @@
+package org.example;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EjercicioUno {
 
     /*
-    * Realizar un programa que permita cargar 15 números en un vector. Una vez cargados, se necesita que el programa
-    * cuente e informe por pantalla cuantas veces se cargó el número 3
-    */
+     * Realizar un programa que permita cargar 15 números en un vector. Una vez cargados, se necesita que el programa
+     * cuente e informe por pantalla cuantas veces se cargó el número 3
+     */
 
     private int listaDeNumeros [] = new int [15];
     private Scanner teclado = new Scanner(System.in);

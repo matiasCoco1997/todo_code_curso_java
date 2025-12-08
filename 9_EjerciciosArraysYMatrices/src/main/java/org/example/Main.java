@@ -1,8 +1,10 @@
-public class EjerciciosMatricesYArrays {
+package org.example;
 
-    public static void main (String[] args){
 
+public class Main {
+    static void main() {
         EjercicioUno ejercicioUno = new EjercicioUno();
+
         ejercicioUno.ejecutarEjercicio();
     }
 }

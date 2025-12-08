@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>9_EjerciciosMatricesYArrays</artifactId>
+    <artifactId>9_EjerciciosArraysYMatrices</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
